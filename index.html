@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BINGO</title>
+    <link href='https://fonts.googleapis.com/css?family=Play' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+
+<body>
+
+    <div class="login-screen">
+        <div class="nav-bar">
+            <div class="title">BINGO</div>
+        </div>
+
+        <div class="login-area">
+            <div class="username">USERNAME</div>
+            <input type="text">
+            <div class="password">PASSWORD</div>
+            <input type="password" name="password" id="password">
+        </div>
+        <div class="buttons">
+
+            <button onclick="setGameScreen()">SignUp</button>
+            <button>SignIn</button>
+        </div>
+
+        <div class="message-area">Creds miscorrect</div>
+        <!-- <div class="message-area">User unfound</div> -->
+    </div>
+
+
+    <div class="game-screen">
+
+
+        <div class="nav-bar">
+            <div class="title">BINGO</div>
+            <button class="logout" onclick="setLoginScreen()">
+                <i class="fa fa-sign-out"></i>
+            </button>
+
+        </div>
+
+        <div class="game-space">
+            <div class="bingo-score">
+                <div class="cell" id="b-let">B</div>
+                <div class="cell" id="i-let">I</div>
+                <div class="cell" id="n-let">N</div>
+                <div class="cell" id="g-let">G</div>
+                <div class="cell" id="o-let">O</div>
+            </div>
+
+            <div class="bingo-board" id='board'>
+                <!-- Need to add numbers and lines -->
+                <div class="hor1"></div>
+                <div class="hor2"></div>
+                <div class="hor3"></div>
+                <div class="hor4"></div>
+
+                <div class="ver1"></div>
+                <div class="ver2"></div>
+                <div class="ver3"></div>
+                <div class="ver4"></div>
+
+                <div class="str-hor1"></div>
+                <div class="str-hor2"></div>
+                <div class="str-hor3"></div>
+                <div class="str-hor4"></div>
+                <div class="str-hor5"></div>
+
+                <div class="str-ver1"></div>
+                <div class="str-ver2"></div>
+                <div class="str-ver3"></div>
+                <div class="str-ver4"></div>
+                <div class="str-ver5"></div>
+
+                <div class="str-dia1"></div>
+                <div class="str-dia2"></div>
+
+            </div>
+
+            <div class="turn">Player's Turn</div>
+
+            <!-- <div class="score"></div> -->
+        </div>
+    </div>
+    <script src="script.js"></script>
+
+</body>
+
+</html>
