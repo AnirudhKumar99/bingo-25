@@ -1,0 +1,390 @@
+body {
+    background-color: #ffffff;
+}
+
+@media only screen and (max-width:768px) {
+
+    body {
+        margin: 0px;
+        padding: 0px;
+        background-color: #171616;
+        font-family: Play;
+
+    }
+
+    .nav-bar {
+        background-color: #50C4E9;
+        width: 100vw;
+        height: 60px;
+        /* text-align: center; */
+        position: absolute;
+        /* align-items: center; */
+
+    }
+
+    .nav-bar .title {
+        /* position: absolute;
+    left: 50%;
+    top:50%; */
+        position: absolute;
+        width: 108px;
+        height: 40px;
+        left: 37%;
+        top: 10px;
+        /* text-align: center; */
+        font-size: 36px;
+
+    }
+
+    .logout {
+        position: relative;
+        float: right;
+        background-color: #50C4E9;
+        border: 0;
+        /* border: #171616 solid 1px; */
+        height: 40px;
+        width: 40px;
+        top: 10px;
+        right: 10px;
+        /* color: #171616; */
+        font-size: 30px;
+    }
+
+    .bingo-score {
+        background-color: #50C4E9;
+        position: absolute;
+        width: 90%;
+        height: 60px;
+        left: 5%;
+        top: 90px;
+        border-radius: 10px;
+
+
+        display: flex;
+        /* justify-content: space-between; */
+    }
+
+    .cell {
+        position: relative;
+        background-color: #59DEE7;
+        width: 45px;
+        height: 45px;
+        /* top:5px; */
+        font-size: 2em;
+        margin-top: 5px;
+        margin-left: 10px;
+        margin-right: 15px;
+        border-radius: 50%;
+
+        text-align: center;
+        vertical-align: middle;
+        line-height: 50px;
+        /* border: solid black 1px; */
+    }
+
+    .bingo-board {
+        background-color: #50C4E9;
+        position: absolute;
+        width: 90vw;
+        height: 90vw;
+        left: 5%;
+        top: 155px;
+        border-radius: 10px;
+
+
+        display: flex;
+        /* justify-content: space-between; */
+    }
+
+    .turn {
+        position: absolute;
+        width: 90vw;
+        height: 60px;
+        left: 5%;
+        bottom: 10%;
+        /* top: 600px; */
+
+        border: #ffffff solid 1px;
+
+        font-family: Play;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 30px;
+        line-height: 35px;
+
+        /* identical to box height */
+        text-align: center;
+        vertical-align: middle;
+        line-height:60px;
+
+        color: #50C4E9;
+    }
+    
+    /* .game-screen{
+        visibility:visible;
+    }
+
+    .login-screen{
+        visibility: hidden;
+    } */
+    
+    .game-screen{
+        visibility:hidden;
+    }
+
+    .login-screen{
+        visibility: visible;
+    }
+
+
+    .login-area{
+        background-color: #50C4E9;
+        position: absolute;
+        width: 90vw;
+        height: 50vw;
+        left: 5%;
+        top: 155px;
+        font-size: 30px;
+        border-radius: 10px;
+        /* align-items: center; */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+
+
+    }
+    input{
+        height: 30px;
+        width: 60vw;
+        border: none;
+        border-radius: 3px;
+    }
+    .buttons{
+        /* background-color: #ffffff; */
+        position: absolute;
+        width: 90vw;
+        left: 5%;
+        bottom:35%;
+        display: flex;
+        justify-content: space-between;
+    }
+    .buttons button{
+        background-color: #50C4E9;
+        font-family: play;
+        font-size: 25px;
+        border-radius: 5px;        
+        border: none;
+        width: 43vw;
+        height:50px;
+    }
+    .buttons button:focus{
+        background-color: white;
+    }
+    .message-area{
+        position:absolute;
+        /* background-color: white; */
+        width: 100%;
+        font-size: 30px;
+        bottom:10%;
+        text-align: center;
+        color:#ee6060;
+        margin: auto;
+    }
+
+
+
+/* hor lines */
+    .hor1{
+    background-color: #171616;
+
+        position: absolute;
+        width: 80vw;
+        /* height: 1px; */
+        border: #171616 solid 1px;
+        top: 23%;
+        left: 5%;
+    }
+    .hor2{
+        background-color: #171616;
+        position: absolute;
+        width: 80vw;
+        /* height: 1px; */
+        border: #171616 solid 1px;
+        top: 41%;
+        left: 5%;
+    }.hor3{
+        background-color: #171616;
+        position: absolute;
+        width: 80vw;
+        /* height: 1px; */
+        border: #171616 solid 1px;
+        top: 59%;
+        left: 5%;
+    }.hor4{
+        background-color: #171616;
+        position: absolute;
+        width: 80vw;
+        /* height: 1px; */
+        border: #171616 solid 1px;
+        top: 77%;
+        left: 5%;
+    }
+/* strikeout hor line */
+
+    .str-hor1{
+        background-color: #171616;
+        position: absolute;
+        width: 80vw;
+        /* height: 1px; */
+        border: #171616 solid 1px;
+        top: 14%;
+        left: 5%;
+        visibility: hidden;
+    }
+    .str-hor2{
+        background-color: #171616;
+        position: absolute;
+        width: 80vw;
+        /* height: 1px; */
+        border: #171616 solid 1px;
+        top: 32%;
+        left: 5%;
+        visibility: hidden;
+    }.str-hor3{
+        background-color: #171616;
+        position: absolute;
+        width: 80vw;
+        /* height: 1px; */
+        border: #171616 solid 1px;
+        top: 50%;
+        left: 5%;
+        visibility: hidden;
+    }.str-hor4{
+        background-color: #171616;
+        position: absolute;
+        width: 80vw;
+        /* height: 1px; */
+        border: #171616 solid 1px;
+        top: 68%;
+        left: 5%;
+        visibility: hidden;
+    }.str-hor5{
+        background-color: #171616;
+        position: absolute;
+        width: 80vw;
+        /* height: 1px; */
+        border: #171616 solid 1px;
+        top: 86%;
+        left: 5%;
+        visibility: hidden;
+    }
+
+
+/* ver lines */
+    .ver1{
+        background-color: #171616;
+        position: absolute;
+        height: 80vw;
+        /* height: 1px; */
+        border: #171616 solid 1px;
+        left: 23%;
+        top: 5%;
+    }
+    .ver2{
+        background-color: #171616;
+        position: absolute;
+        height: 80vw;
+        /* height: 1px; */
+        border: #171616 solid 1px;
+        left: 41%;
+        top: 5%;
+    }.ver3{
+        background-color: #171616;
+        position: absolute;
+        height: 80vw;
+        /* height: 1px; */
+        border: #171616 solid 1px;
+        left: 59%;
+        top: 5%;
+    }.ver4{
+        background-color: #171616;
+        position: absolute;
+        height: 80vw;
+        /* height: 1px; */
+        border: #171616 solid 1px;
+        left: 77%;
+        top: 5%;
+    }
+
+    /* strikeout ver lines */
+    .str-ver1{
+        background-color: #171616;
+        position: absolute;
+        height: 80vw;
+        /* height: 1px; */
+        border: #171616 solid 1px;
+        left: 14%;
+        top: 5%;
+        visibility:hidden;
+    }
+    .str-ver2{
+        background-color: #171616;
+        position: absolute;
+        height: 80vw;
+        /* height: 1px; */
+        border: #171616 solid 1px;
+        left: 32%;
+        top: 5%;
+        visibility:hidden;
+    }.str-ver3{
+        background-color: #171616;
+        position: absolute;
+        height: 80vw;
+        /* height: 1px; */
+        border: #171616 solid 1px;
+        left: 50%;
+        top: 5%;
+        visibility:hidden;
+    }.str-ver4{
+        background-color: #171616;
+        position: absolute;
+        height: 80vw;
+        /* height: 1px; */
+        border: #171616 solid 1px;
+        left: 68%;
+        top: 5%;
+        visibility:hidden;
+    }.str-ver5{
+        background-color: #171616;
+        position: absolute;
+        height: 80vw;
+        /* height: 1px; */
+        border: #171616 solid 1px;
+        left: 86%;
+        top: 5%;
+        visibility:hidden;
+    }
+
+
+    .str-dia1{
+        background-color: #171616;
+        position: absolute;
+        height: 100vw;
+        border: #171616 solid 1px;
+        right: 50%;
+        top: -5%;
+        transform: rotate(45deg);
+        visibility:hidden;
+    }
+    .str-dia2{
+        background-color: #171616;
+        position: absolute;
+        height: 100vw;
+        border: #171616 solid 1px;
+        left: 50%;
+        top: -5%;
+        transform: rotate(135deg);
+        visibility:hidden;
+    }
+}
