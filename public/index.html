@@ -4,7 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+    <meta name="viewport" content="width=device-width, user-scalable=false;">
     <title>BINGO</title>
     <link href='https://fonts.googleapis.com/css?family=Play' rel='stylesheet'>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -21,17 +22,20 @@
 
         <div class="login-area">
             <div class="username">USERNAME</div>
-            <input type="text">
+            <input type="text" class="name">
             <div class="password">PASSWORD</div>
-            <input type="password" name="password" id="password">
+            <input type="password" name="password" class="passcode">
         </div>
         <div class="buttons">
 
-            <button onclick="setGameScreen()">SignUp</button>
-            <button>SignIn</button>
+            <button  onclick="signUp()" class="signup">SignUp</button>
+            <!-- <button onclick="setGameScreen()">SignUp</button> -->
+            
+            <button  onclick="signIn()" class="signin">SignIn</button>
+
         </div>
 
-        <div class="message-area">Creds miscorrect</div>
+        <div class="message-area"></div>
         <!-- <div class="message-area">User unfound</div> -->
     </div>
 
@@ -41,7 +45,8 @@
 
         <div class="nav-bar">
             <div class="title">BINGO</div>
-            <button class="logout" onclick="setLoginScreen()">
+            <button class="logout" onclick="logOut()">
+                <!-- <button class="logout" onclick="setLoginScreen()"> -->
                 <i class="fa fa-sign-out"></i>
             </button>
 
@@ -85,7 +90,7 @@
 
             </div>
 
-            <div class="turn">Player's Turn</div>
+            <div class="turn">Game not started</div>
 
             <!-- <div class="score"></div> -->
         </div>
